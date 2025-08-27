@@ -41,7 +41,7 @@ const links: Link[] = [
 
 <template>
   <main
-    class="flex flex-col gap-5 md:gap-0 md:flex-row md:justify-between justify-center items-center md:items-start w-full"
+    class="flex flex-col gap-5 md:gap-10 md:flex-row md:justify-between justify-center items-center md:items-start w-full"
   >
     <div
       class="flex flex-col gap-3 order-2 md:order-1 leading-snug items-center text-center md:text-left md:items-start"

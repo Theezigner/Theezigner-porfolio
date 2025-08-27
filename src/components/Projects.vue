@@ -82,14 +82,14 @@ const projects: Projects[] = [
 
             <div class="mt-auto w-full flex flex-row gap-2 mt-5 pt-5 ">
                 <button
-                class="flex-1 rounded-lg bg-gradient-to-r from-red-500 to-red-900 py-2 px-4 text-white font-semibold text-sm w-35"
+                class="flex-1 rounded-lg bg-gradient-to-r from-red-500 to-red-900 py-2 px-4 text-white font-semibold text-xs md:text-sm w-35"
                 >
                 <a :href="project.demoLink" target="_blank" rel="noopener"
                     >Live Demo</a
                 >
                 </button>
                 <button
-                class="flex-1 rounded-lg border border-white bg-transparent py-2 px-4  font-semibold text-sm w-35"
+                class="flex-1 rounded-lg border border-white bg-transparent py-2 px-4  font-semibold text-xs md:text-sm w-35"
                 >
                 <a :href="project.gitLink" target="_blank" rel="noopener"
                     >GitHub Repo</a
