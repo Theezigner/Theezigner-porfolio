@@ -41,12 +41,12 @@ const links: Link[] = [
 
 <template>
   <main
-    class="flex flex-col gap-5 md:gap-30 md:flex-row md:justify-between justify-center items-center md:items-start w-full"
+    class="flex flex-col gap-5 md:gap-0 md:flex-row md:justify-between justify-center items-center md:items-start w-full"
   >
     <div
       class="flex flex-col gap-3 order-2 md:order-1 leading-snug items-center text-center md:text-left md:items-start"
     >
-      <div class="text-4xl md:text-6xl font-bold md:w-[40vw] leading-snug">
+      <div class="text-4xl md:text-6xl font-bold  leading-snug">
         <p>Hello, I'm Temitayo ADEBAYO (Theezigner)</p>
         <transition name="slide-up" mode="out-in">
           <p
@@ -58,7 +58,7 @@ const links: Link[] = [
         </transition>
       </div>
       <div
-        class="flex flex-row gap-2 mt-5 order-3 text-white font-semibold text-lg leading-normal"
+        class="flex flex-row gap-2 mt-5 order-3 text-white font-semibold md:text-lg text-sm leading-normal"
       >
         <button
           v-for="(link, index) in links"
@@ -84,7 +84,7 @@ const links: Link[] = [
       <img
         src="/ChatGPT Image Aug 9, 2025, 11_59_22 AM.png"
         alt="down arrow"
-        class="rounded w-50 h-50 md:w-100 md:h-100 border-[4px] border-solid border-transparent"
+        class="rounded w-50 h-50 md:w-auto md:h-auto border-[4px] border-solid border-transparent"
       />
     </div>
   </main>

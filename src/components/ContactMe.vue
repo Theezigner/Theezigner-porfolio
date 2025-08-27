@@ -11,17 +11,17 @@ const socials: Socials[] = [
     link: "mailto:adebayotemitayo86@gmail.com",
   },
   {
-    icon: "/c927d61a-fcd4-4b3b-85c8-fb7bf436c4aa-removebg-preview.png",
+    icon: "/Github.svg",
     name: "GitHub",
     link: "https://github.com/Theezigner",
   },
   {
-    icon: "/Linkedin_White_Icon__Linkedin_Icons__White_Icons__Black_And_White_PNG_and_Vector_with_Transparent_Background_for_Free_Download-removebg-preview.png",
+    icon: "/linkedin.svg",
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/temitayo-adebayo-95244b239/",
   },
   {
-    icon: "/f91779ec-95b6-4188-a523-8a0a989ae40e-removebg-preview.png",
+    icon: "/twitter.svg",
     name: "X",
     link: "https://x.com/TeeTriple64473",
   },

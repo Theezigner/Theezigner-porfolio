@@ -42,7 +42,7 @@ const frameworks: Skills[] = [
     name: "Vite",
   },
   {
-    image: "/tailwindcss-mark.d52e9897.svg",
+    image: "/Tailwind Css.svg",
     name: "Tailwind CSS",
   },
 ];
@@ -54,16 +54,16 @@ const designTools: Skills[] = [
     name: "Figma",
   },
   {
-    image: "/Adobe Photoshop en App Store.jpg",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg",
     name: "Photoshop",
   },
   {
     image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-original.svg",
     name: "Illustrator",
   },
   {
-    image: "/Canva.jpg",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg",
     name: "Canva",
   },
 ];
@@ -75,7 +75,7 @@ const technologies: Skills[] = [
     name: "Git",
   },
   {
-    image: "/c927d61a-fcd4-4b3b-85c8-fb7bf436c4aa-removebg-preview.png",
+    image: "/Github.svg",
     name: "GitHub",
   },
   {
@@ -91,10 +91,10 @@ const technologies: Skills[] = [
 ];
 
 const softSkills: string[] = [
-  "Effective Communication",
   "Team Collaboration",
   "Debugging",
   "Problem-Solving",
+  "Effective Communication",
   "Adaptability",
   "Time Management",
 ];
@@ -108,17 +108,17 @@ const softSkills: string[] = [
     <h2 class="font-bold text-4xl md:text-5xl">Skills & Tools</h2>
 
     <section
-      class="grid grid-cols-1 md:grid-cols-2 justify-between md:flex-row gap-10 md:gap-10 mt-10 md:w-full md:h-full"
+      class="grid grid-cols-1 md:grid-cols-2 justify-between gap-10 md:gap-10 mt-10 md:w-full md:h-full"
     >
       <div
         class="p-[1px] rounded-lg bg-gradient-to-r from-red-500 to-red-900 w-full h-full"
       >
         <div
-          class="flex flex-col rounded-lg w-full h-full bg-[#0D0C21] flex items-center text-white px-20 md:px-0"
+          class="flex flex-col rounded-lg w-full h-full bg-[#0D0C21] flex items-center text-white"
         >
           <p class="text-3xl font-bold mt-2">Languages</p>
 
-          <div class="grid grid-cols-2 gap-20 my-10">
+          <div class="grid grid-cols-2 md:gap-20 gap-10 my-10">
             <div
               v-for="(language, index) in languages"
               :key="index"
@@ -127,7 +127,7 @@ const softSkills: string[] = [
               <img
                 :src="language.image"
                 :alt="language.name"
-                class="w-20 h-20 mx-5 md:w-20 md:h-20"
+                class="w-15 h-15 md:w-20 md:h-20 mx-5 md:w-20 md:h-20"
               />
               <p class="text-sm mt-2">{{ language.name }}</p>
             </div>
@@ -139,11 +139,11 @@ const softSkills: string[] = [
         class="p-[1px] rounded-lg bg-gradient-to-r from-red-500 to-red-900 w-full h-full"
       >
         <div
-          class="flex flex-col rounded-lg w-full h-full bg-[#0D0C21] flex items-center text-white px-20 md:px-0"
+          class="flex flex-col rounded-lg w-full h-full bg-[#0D0C21] flex items-center text-white"
         >
           <p class="text-3xl font-bold mt-2">Frameworks/Build Tools</p>
 
-          <div class="grid grid-cols-2 gap-20 my-10">
+          <div class="grid grid-cols-2 md:gap-20 gap-10 my-10">
             <div
               v-for="(framework, index) in frameworks"
               :key="index"
@@ -152,7 +152,7 @@ const softSkills: string[] = [
               <img
                 :src="framework.image"
                 :alt="framework.name"
-                class="w-20 h-20 mx-5 md:w-20 md:h-20"
+                class="w-15 h-15 md:w-20 md:h-20 mx-5 md:w-20 md:h-20"
               />
               <p class="text-sm mt-2">{{ framework.name }}</p>
             </div>
@@ -164,11 +164,11 @@ const softSkills: string[] = [
         class="p-[1px] rounded-lg bg-gradient-to-r from-red-500 to-red-900 w-full h-full"
       >
         <div
-          class="flex flex-col rounded-lg w-full h-full bg-[#0D0C21] flex items-center text-white px-20 md:px-0"
+          class="flex flex-col rounded-lg w-full h-full bg-[#0D0C21] flex items-center text-white"
         >
           <p class="text-3xl font-bold mt-2">Design Tools</p>
 
-          <div class="grid grid-cols-2 gap-20 my-10">
+          <div class="grid grid-cols-2 md:gap-20 gap-10 my-10">
             <div
               v-for="(designTool, index) in designTools"
               :key="index"
@@ -177,7 +177,7 @@ const softSkills: string[] = [
               <img
                 :src="designTool.image"
                 :alt="designTool.name"
-                class="w-20 h-20 mx-5 md:w-20 md:h-20"
+                class="w-15 h-15 md:w-20 md:h-20 mx-5 md:w-20 md:h-20"
               />
               <p class="text-sm mt-2">{{ designTool.name }}</p>
             </div>
@@ -189,11 +189,11 @@ const softSkills: string[] = [
         class="p-[1px] rounded-lg bg-gradient-to-r from-red-500 to-red-900 w-full h-full"
       >
         <div
-          class="flex flex-col rounded-lg w-full h-full bg-[#0D0C21] flex items-center text-white px-20 md:px-0"
+          class="flex flex-col rounded-lg w-full h-full bg-[#0D0C21] flex items-center text-white"
         >
           <p class="text-3xl font-bold mt-2">Technologies</p>
 
-          <div class="grid grid-cols-2 gap-20 my-10">
+          <div class="grid grid-cols-2 md:gap-20 gap-10 my-10">
             <div
               v-for="(technology, index) in technologies"
               :key="index"
@@ -202,7 +202,7 @@ const softSkills: string[] = [
               <img
                 :src="technology.image"
                 :alt="technology.name"
-                class="w-20 h-20 mx-5 md:w-20 md:h-20"
+                class="w-15 h-15 md:w-20 md:h-20 mx-5 md:w-20 md:h-20"
               />
               <p class="text-sm mt-2">{{ technology.name }}</p>
             </div>
@@ -214,22 +214,25 @@ const softSkills: string[] = [
         class="p-[1px] rounded-lg bg-gradient-to-r from-red-500 to-red-900 w-full h-full"
       >
         <div
-          class="flex flex-col rounded-lg w-full h-full bg-[#0D0C21] flex items-center text-white px-5 md:px-0"
+          class="flex flex-col rounded-lg w-full h-full bg-[#0D0C21] flex items-center text-white px-5"
         >
           <p class="text-3xl font-bold mt-2">Soft Skills</p>
 
-          <div class="grid grid-cols-2 gap-10 my-10">
+          <div class="grid grid-cols-2 gap-5 my-10">
             <div
               v-for="(softSkill, index) in softSkills"
               :key="index"
               class="flex flex-col items-left"
             >
-              <p class="flex items-center gap-2 font-semibold">
-                <span
-                  class="w-3 h-3 rounded-lg bg-gradient-to-r from-red-500 to-red-900"
-                ></span
-                >{{ softSkill }}
+            <div class="flex flex-row flex-wrap items-center gap-2 gap-1 md:gap-2 font-semibold text-left text-xs md:text-sm">
+              <div
+                  class="md:w-3 md:h-3 w-2 h-2 rounded-lg bg-gradient-to-r from-red-500 to-red-900"
+                ></div
+                >
+              <p class="">
+                {{ softSkill }}
               </p>
+            </div>
             </div>
           </div>
         </div>

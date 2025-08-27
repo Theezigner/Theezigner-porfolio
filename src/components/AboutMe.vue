@@ -12,7 +12,7 @@
       >
     </h2>
 
-    <p class="mt-6 text-xl md:text-2xl text-justify  w-full">
+    <p class="mt-6 text-xl md:text-2xl md:text-justify  w-full">
       I’m a Frontend Developer passionate about building clean, responsive, and user-friendly web applications. Skilled in HTML, CSS, JavaScript, TypeScript, Vue.js, React, and Tailwind CSS, I focus on creating interfaces that blend functionality with great design. I enjoy learning new technologies, solving problems creatively, and collaborating on projects that push me to grow.
     </p>
   </main>

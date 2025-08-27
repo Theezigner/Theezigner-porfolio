@@ -53,7 +53,7 @@ const projects: Projects[] = [
         class="p-[1px] rounded-lg bg-gradient-to-r from-red-500 to-red-900 w-auto h-full"
       >
         <div
-          class="flex flex-col rounded-lg w-auto h-full bg-[#0D0C21] flex items-start text-white p-5 md:p-5"
+          class="flex flex-col flex-wrap rounded-lg w-auto h-full bg-[#0D0C21] flex items-start text-white p-5 md:p-5"
         >
           <img
             :src="project.image"
@@ -64,16 +64,16 @@ const projects: Projects[] = [
           <p class="flex gap-2 font-semibold text-2xl mt-2">
             {{ project.title }}
           </p>
-          <p class="text-sm text-justify font-normal text-gray-300 my-3">
+          <p class="text-sm text-left font-normal text-gray-400 my-3">
             {{ project.description }}
           </p>
 
-          <div class="flex flex-row gap-2">
+          <div class="flex flex-row flex-wrap gap-2">
             <div v-for="(tool, idx) in project.buildTools" :key="idx">
               <div
-                class="p-[0.5px] rounded-full bg-gradient-to-r from-red-500 to-red-900"
+                class="p-[0.5px] rounded-full bg-gradient-to-r from-red-500 to-red-900 w-auto"
               >
-                <div class="bg-[#0D0C21] rounded-full px-3 py-0 text-gray-200 text-sm">
+                <div class="bg-[#0D0C21] rounded-full px-3 py-0 text-gray-200 text-xs">
                   {{ tool }}
                 </div>
               </div>
