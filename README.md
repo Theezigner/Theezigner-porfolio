@@ -30,9 +30,9 @@ This project is not just a static website — it’s a reflection of my **growth
 ## 📂 Features  
 
 - 🏠 **Home Section** — A snapshot of who I am and what I do  
+- ⚡ **Tech Stack Section** — Listing all the tools and frameworks I’ve mastered  
 - 💼 **Projects Showcase** — Highlighting real projects and skills in action  
 - 🎓 **Education Section** — Detailing my training and certifications from different programs  
-- ⚡ **Tech Stack Section** — Listing all the tools and frameworks I’ve mastered  
 - 📧 **Contact Section** — Direct links to reach me via social platforms or email  
 
 ---
@@ -43,10 +43,9 @@ Clone the repo and run it locally:
 
 ```bash
 # clone the project
-git clone https://github.com/your-username/your-portfolio.git
-
+git clone https://github.com/Theezigner/Theezigner-porfolio.git
 # move into the project folder
-cd your-portfolio
+cd Theezigner-portfolio
 
 # install dependencies
 pnpm install  # or npm install / yarn install
@@ -63,10 +62,10 @@ The site will be available at: [http://localhost:5173](http://localhost:5173)
 
 Want to connect? Feel free to reach out:  
 
-- **Email**: [youremail@example.com](mailto:youremail@example.com)  
-- **LinkedIn**: [Your LinkedIn](https://linkedin.com/in/yourprofile)  
-- **GitHub**: [Your GitHub](https://github.com/your-username)  
-- **Twitter**: [@yourhandle](https://twitter.com/yourhandle)  
+- **Email**: [adebayotemitayo86@gmail.com](mailto:adebayotemitayo86@gmail.com)  
+- **LinkedIn**: [Temitayo-Adebayo](https://www.linkedin.com/in/temitayo-adebayo-95244b239/)  
+- **GitHub**: [Theezigner](https://github.com/Theezigner)  
+- **X (formerly Twitter)**: [@Theezigner](https://x.com/TeeTriple64473)  
 
 ---
 
