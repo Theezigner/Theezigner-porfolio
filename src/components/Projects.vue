@@ -9,7 +9,14 @@ type Projects = {
 };
 
 const projects: Projects[] = [
-  
+    {
+    image: "/Desktop - Home.svg",
+    title: "Space Tourism Website",
+    description: "A responsive, single-page product showcase inspired by Frontend Mentor challenges. It features a thumbnail-driven image gallery, a cart system with localStorage persistence, and an animated mobile hamburger menu. Built with React 19, TypeScript, Vite 7, Tailwind CSS v4, and React Router DOM v7, the project demonstrates clean state management, reusable contexts, and smooth UI transitions.",
+    buildTools: ["Next.js","Typescipt", "React", "TailwindCSS"],
+    demoLink: "https://space-app-seven-rouge.vercel.app/",
+    gitLink: "https://github.com/Theezigner/space-app.git",
+  },
   {
     image: "/ecommerce-product-page.jpg",
     title: "E-commerce Product Page",
@@ -27,7 +34,7 @@ const projects: Projects[] = [
     gitLink: "https://github.com/Theezigner/interactive-card-design.git",
   },
   {
-    image: "/SPOTS.png",
+    image: "/Spots App 1440px Name Overflow.svg",
     title: "SPOTS App",
     description: "A media app",
     buildTools: ["React", "TailwindCSS", "Vite"],

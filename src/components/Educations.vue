@@ -16,7 +16,7 @@ const educations: Educations[] = [
     name: "Scrimba",
     years: { start: "2025", end: "Present" },
     description:
-      "Completed an immersive, project-based program focused on JavaScript, TypeScript, and React. Built interactive web applications while strengthening problem-solving skills, state management, and modern frontend workflows. Gained practical experience through coding challenges and hands-on projects that emphasized clean, reusable code and responsive design.",
+      "Completed an immersive, project-based program focused on Next.js, JavaScript, TypeScript, and React. Built interactive web applications while strengthening problem-solving skills, state management, and modern frontend workflows. Gained practical experience through coding challenges and hands-on projects that emphasized clean, reusable code and responsive design.",
   },
   {
     name: "Vue Mastery",
