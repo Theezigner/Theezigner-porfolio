@@ -48,7 +48,7 @@ git clone https://github.com/Theezigner/Theezigner-porfolio.git
 cd Theezigner-portfolio
 
 # install dependencies
-pnpm install  # or npm install / yarn install
+pnpm install  
 
 # run the dev server
 pnpm run dev

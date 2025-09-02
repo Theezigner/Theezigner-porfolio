@@ -12,7 +12,7 @@ const projects: Projects[] = [
     {
     image: "/Desktop - Home.svg",
     title: "Space Tourism Website",
-    description: "A responsive, single-page product showcase inspired by Frontend Mentor challenges. It features a thumbnail-driven image gallery, a cart system with localStorage persistence, and an animated mobile hamburger menu. Built with React 19, TypeScript, Vite 7, Tailwind CSS v4, and React Router DOM v7, the project demonstrates clean state management, reusable contexts, and smooth UI transitions.",
+    description: "A responsive, multi-section website built with Next.js 14, TypeScript, and Tailwind CSS v4, designed to demonstrate modern frontend practices. It features adaptive layouts with per-page background images, screen-size–specific image rendering, and dynamic flex ordering for mobile vs. desktop. The project highlights responsive design techniques, component reusability, and accessibility, while leveraging Next.js’ routing and optimization for a smooth developer and user experience.",
     buildTools: ["Next.js","Typescipt", "React", "TailwindCSS"],
     demoLink: "https://space-app-seven-rouge.vercel.app/",
     gitLink: "https://github.com/Theezigner/space-app.git",
@@ -36,7 +36,7 @@ const projects: Projects[] = [
   {
     image: "/Spots App 1440px Name Overflow.svg",
     title: "SPOTS App",
-    description: "A media app",
+    description: "A single-page social media web app built with React and Vite, designed for sharing and engaging with user-generated content. It features photo uploads with captions, editable user profiles with avatars and bios, and interactive like/unlike functionality. The project emphasizes clean state management, responsive layouts, and smooth user interactions, showcasing the core building blocks of a modern social platform.",
     buildTools: ["React", "TailwindCSS", "Vite"],
     demoLink: "https://spots-app-ashen.vercel.app/",
     gitLink: "https://github.com/Theezigner/spots-app.git",
