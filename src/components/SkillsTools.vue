@@ -105,7 +105,7 @@ const softSkills: string[] = [
     id="skills&tools"
     class="w-full flex flex-col items-center justify-center text-center md:items-start md:text-left"
   >
-    <h2 class="font-bold text-4xl md:text-5xl">Skills & Tools</h2>
+    <h2 class="font-bold text-4xl md:text-5xl pt-30">Skills & Tools</h2>
 
     <section
       class="grid grid-cols-1 md:grid-cols-2 justify-between gap-10 md:gap-10 mt-10 md:w-full md:h-full"

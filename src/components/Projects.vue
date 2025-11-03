@@ -9,6 +9,30 @@ type Projects = {
 };
 
 const projects: Projects[] = [
+  {
+    image: "/pokemon card.png",
+    title: "Pokemon Card Display",
+    description: "A modern, single-page application built with React.js, TypeScript, and Vite, designed to fetch, display, and manage data from the PokéAPI.The interface, which I also designed and prototyped, features a card-based UI with responsive layouts styled using Tailwind CSS. It showcases proficiency in advanced frontend practices, including efficient API data fetching with axios, robust error handling, custom skeleton loading states, and a scalable architecture utilizing TanStack Router for type-safe routing and infinite scrolling for improved user experience.",
+    buildTools: ["Figma", "React","Typescipt","Vite", "TailwindCSS"],
+    demoLink: "https://pokemon-card-display.vercel.app/",
+    gitLink: "https://github.com/Theezigner/Pokemon-Card-Display.git",
+  },
+  {
+    image: "/Theezigner portfolio ss.png",
+    title: "Theezigner's Portfolio",
+    description: "A fully responsive, multi-section personal portfolio built with Vue 3 (Composition API), TypeScript, and Vite, designed to demonstrate modern Frontend Engineering proficiency.The interface was meticulously designed in Figma and implemented using Tailwind CSS for an efficient, utility-first styling approach, featuring smooth animations and a polished UI. The project highlights core development practices like component reusability and state management while leveraging Vite for a high-performance and optimized user experience.",
+    buildTools: ["Figma", "Vue.js","Typescipt", "TailwindCSS"],
+    demoLink: "https://theezigner-porfolio.vercel.app/",
+    gitLink: "https://github.com/Theezigner/Theezigner-porfolio.git",
+  },
+   {
+    image: "/vapor Tracker.png",
+    title: "Vapor Tracker ",
+    description: "A high-fidelity System Dashboard (Synth-Tracker) built with React.js, TypeScript, and Vite, designed as a focused exercise in retro-futuristic, synthwave UI aesthetics.The project is a dummy application built solely for design and front-end practice; all data and interactive elements are mocked or static. It demonstrates mastery of front-end architecture and advanced aesthetic implementation, leveraging Tailwind CSS to achieve a specific, high-contrast visual language with cyan, purple, and fuchsia glowing accents, showcasing proficiency in the React ecosystem and utility-first design principles.",
+    buildTools: ["Figma", "React","Typescipt", "TailwindCSS"],
+    demoLink: "https://vapor-tracker.vercel.app/",
+    gitLink: "https://github.com/Theezigner/vaporTracker.git",
+  },
     {
     image: "/Desktop - Home.svg",
     title: "Space Tourism Website",
@@ -49,7 +73,7 @@ const projects: Projects[] = [
     id="projects"
     class="w-full flex flex-col justify-center text-center items-start md:text-left"
   >
-    <h2 class="font-bold text-4xl md:text-5xl">Projects</h2>
+    <h2 class="font-bold text-4xl md:text-5xl pt-30">Projects</h2>
 
     <section
       class="grid grid-cols-1 md:grid-cols-3 justify-between md:gap-5 gap-10 mt-10 w-full"

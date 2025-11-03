@@ -50,7 +50,7 @@ const educations: Educations[] = [
     id="education"
     class="w-full flex flex-col items-center justify-center text-center md:items-start md:text-left"
   >
-    <h2 class="font-bold text-4xl md:text-5xl">Educations</h2>
+    <h2 class="font-bold text-4xl md:text-5xl pt-30">Educations</h2>
 
     <section
       class="flex flex-col justify-between gap-10  mt-10 md:w-full"
