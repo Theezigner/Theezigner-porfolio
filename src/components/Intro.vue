@@ -30,7 +30,7 @@ type Link = {
 const links: Link[] = [
   {
     name: "Download CV",
-    url: "/Temitayo Adebayo_Frontend Resume.docx (1).pdf",
+    url: "/Temitayo Adebayo_Resume (1).pdf",
   },
   {
     name: "GitHub Link",
