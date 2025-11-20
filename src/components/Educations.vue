@@ -43,14 +43,8 @@ const educations: Educations[] = [
       "Focused on mastering Vue.js through structured tutorials and hands-on practice. Learned key concepts such as the Composition API, component-based architecture, reactivity, and state management. Applied these lessons by building interactive projects, reinforcing best practices for writing clean, maintainable Vue code.",
   },
   {
-    name: "Zuri x Ingressive",
-    years: { start: "2022", end: "22" },
-    description:
-      "Participated in an intensive training program focused on UI/UX design fundamentals. Gained practical experience in user research, wireframing, prototyping, and visual design while collaborating with peers on real-world projects. Built a strong foundation in creating user-centered digital experiences with attention to accessibility and aesthetics.",
-  },
-  {
     name: "Coursera",
-    years: { start: "2022", end: "22" },
+    years: { start: "2023", end: "23" },
     description:
       "Completed a professional course in UI/UX Design, gaining a strong foundation in user research, wireframing, prototyping, and usability principles. Learned how to design intuitive and user-centered interfaces while applying industry-standard tools and design thinking methods to real-world projects.",
     certificates: [
@@ -60,6 +54,12 @@ const educations: Educations[] = [
         preview: "/certificates/coursera/coursera preview.jpeg",
       },
     ],
+  },
+  {
+    name: "Zuri x Ingressive",
+    years: { start: "2022", end: "22" },
+    description:
+      "Participated in an intensive training program focused on UI/UX design fundamentals. Gained practical experience in user research, wireframing, prototyping, and visual design while collaborating with peers on real-world projects. Built a strong foundation in creating user-centered digital experiences with attention to accessibility and aesthetics.",
   },
   {
     name: "Canva 4 E",
