@@ -9,7 +9,7 @@ import ContactMe from './ContactMe.vue';
 </script>
 
 <template>
-  <main class="w-full items-center flex flex-col md:gap-50 gap-40 md:mt-40 mt-30 px-5 md:px-20 md:text-left t">
+  <main class="w-full items-center flex flex-col md:gap-50 gap-30 md:mt-40 mt-30 px-5 md:px-20 md:text-left t">
     <Intro />
     <AboutMe id="aboutme" class="scroll-pt-24" />
     <SkillsTools id="skills&tools" class="scroll-pt-24" />

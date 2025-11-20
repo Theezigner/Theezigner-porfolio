@@ -41,17 +41,17 @@ const links: Link[] = [
 
 <template>
   <main
-    class="flex flex-col gap-5 md:gap-10 md:flex-row md:justify-between justify-center items-center md:items-start w-full"
+    class="flex flex-col gap-5 md:gap-10 md:flex-row md:justify-between justify-center items-center lg:items-start w-full"
   >
     <div
       class="flex flex-col gap-3 order-2 md:order-1 leading-snug items-center text-center md:text-left md:items-start"
     >
-      <div class="text-4xl md:text-6xl font-bold  leading-snug">
+      <div class="text-3xl md:text-5xl lg:text-6xl font-bold  leading-snug">
         <p>Hello, I'm Temitayo ADEBAYO (Theezigner)</p>
         <transition name="slide-up" mode="out-in">
           <p
             :key="currentProfession"
-            class="inline-block bg-gradient-to-r from-red-500 to-red-900 bg-clip-text text-transparent md:text-5xl text-3xl mt-5"
+            class="inline-block bg-gradient-to-r from-red-500 to-red-900 bg-clip-text text-transparent lg:text-5xl md:text-4xl text-3xl mt-5"
           >
             {{ currentProfession }}
           </p>
@@ -64,11 +64,11 @@ const links: Link[] = [
           v-for="(link, index) in links"
           :key="index"
           @click="openLink(link.url)"
-          class="rounded-full bg-gradient-to-r from-red-500 to-red-900 py-2 px-2"
+          class="rounded-xl md:rounded-full bg-gradient-to-r from-red-500 to-red-900 py-2 px-2"
         >
           {{ link.name }}
         </button>
-        <a href="#contactme" class="bg-white rounded-full py-2 px-2">
+        <a href="#contactme" class="bg-white rounded-xl md:rounded-full py-2 px-2">
           <div
             class="bg-gradient-to-r from-red-500 to-red-800 bg-clip-text text-transparent"
           >

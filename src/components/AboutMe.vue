@@ -12,7 +12,7 @@
       >
     </h2>
 
-    <p class="mt-6 text-xl md:text-2xl md:text-justify  w-full">
+    <p class="mt-6 md:text-2xl md:text-justify  w-full">
       I'm a <span class="text-red-500">Frontend Developer</span> with a strong <span class="text-red-500">UI/UX</span> design foundation, expert at bridging the gap between aesthetic vision and technical reality. Leveraging tools like Figma and Photoshop alongside React, TypeScript, and Tailwind CSS, I build responsive, accessible, and high-performing web experiences. I specialize in turning user-centered designs into robust, scalable interfaces from concept to deployment. I enjoy learning new technologies, solving problems creatively, and collaborating on projects that push me to grow.
     </p>
   </main>

@@ -53,23 +53,31 @@ const educations: Educations[] = [
     <h2 class="font-bold text-4xl md:text-5xl pt-30">Educations</h2>
 
     <section
-      class="flex flex-col justify-between gap-10  mt-10 md:w-full"
+      class="flex flex-col justify-between gap-10 mt-10 md:w-full w-full"
     >
       <div v-for="(education, index) in educations" :key="index" class="">
-        <div class="flex flex-row md:gap-5 gap-3 mb-5 items-center">
-            <div class="md:w-8 md:h-8 w-5 h-5 rounded-full bg-gradient-to-r from-red-500 to-red-900 mr-5"></div>
-          <p class="text-xl md:text-4xl font-semibold text-left">{{ education.name }}</p>
-          <div class="rounded-lg bg-gradient-to-r from-red-500 to-red-900 py-1 px-3 md:text-2xl text-white font-semibold text-center ">
-            <p>{{ education.years.start }} - {{ education.years.end }}</p>
+        <div class="mb-5 flex flex-wrap items-center gap-3">
+          <div class="flex flex-row items-center gap-5">
+            <div class="hidden md:block bg-gradient-to-r from-red-500 to-red-900 md:w-5 md:h-5 rounded-full"></div>
+            <p class="text-lg md:text-4xl font-semibold text-left">
+            {{ education.name }}
+          </p>
+          </div>
+          <div
+            class="rounded-lg bg-gradient-to-r from-red-500 to-red-900 py-1 px-3 text-sm md:text-2xl text-white font-semibold"
+          >
+            {{ education.years.start }} - {{ education.years.end }}
           </div>
         </div>
         <div
-          class="p-[1px] rounded-lg bg-gradient-to-r from-red-500 to-red-900 w-auto h-full ml-18 "
+          class="p-[1px] rounded-lg bg-gradient-to-r from-red-500 to-red-900 w-full h-full ml-0 md:ml-10"
         >
           <div
-            class="flex flex-col rounded-lg w-auto h-full bg-[#0D0C21] flex items-start text-white px-4 md:p-5"
+            class="flex flex-col rounded-lg w-full h-full bg-[#0D0C21] flex items-start text-white px-4 md:p-5"
           >
-            <p class="md:text-justify text-sm md:text-xl font-normal text-gray-300 my-3">
+            <p
+              class="md:text-justify text-left text-xs md:text-xl font-normal text-gray-300 my-3"
+            >
               {{ education.description }}
             </p>
           </div>
@@ -78,5 +86,3 @@ const educations: Educations[] = [
     </section>
   </main>
 </template>
-
-

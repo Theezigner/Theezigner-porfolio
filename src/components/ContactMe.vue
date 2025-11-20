@@ -38,7 +38,7 @@ const socials: Socials[] = [
       >
     </h2>
 
-    <div class="flex items-center gap-6 flex-wrap mb-10">
+    <div class="flex items-center gap-3 md:gap-6 flex-wrap mb-10">
       <a
         v-for="(social, index) in socials"
         :key="index"
@@ -51,7 +51,7 @@ const socials: Socials[] = [
         <img
           :src="social.icon"
           :alt="social.name"
-          class="w-10 h-10 hover:scale-110 transition-transform duration-300"
+          class="w-8 h-8 md:w-10 md:h-10 hover:scale-110 transition-transform duration-300"
         />
       </a>
     </div>

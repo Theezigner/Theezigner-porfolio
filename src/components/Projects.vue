@@ -95,7 +95,7 @@ const projects: Projects[] = [
           <p class="flex gap-2 font-semibold text-2xl mt-2">
             {{ project.title }}
           </p>
-          <p class="text-sm text-left font-normal text-gray-400 my-3">
+          <p class="text-xs lg:text-sm text-left font-normal text-gray-400 my-3">
             {{ project.description }}
           </p>
 

@@ -4,7 +4,7 @@ import Body from './components/Body.vue'
 </script>
 
 <template>
-  <main class="bg-[#0D0C21] text-white min-h-screen py-5 px-5 md:py-10 md:px-20">
+  <main class="bg-[#0D0C21] text-white min-h-screen py-2 px-2 lg:py-10 lg:px-20">
     <Header />
     <Body />
   </main>
