@@ -54,7 +54,7 @@ const skillCategories: SkillCategory[] = [
         name: "React",
       },
       {
-        image: "/vite.svg",
+        image: "/skills/vite.svg",
         name: "Vite",
       },
       {
