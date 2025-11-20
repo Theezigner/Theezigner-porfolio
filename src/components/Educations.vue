@@ -121,7 +121,7 @@ const educations: Educations[] = [
                 <template v-if="cert.type === 'pdf'">
                   <div 
                     v-if="cert.preview"
-                    class="relative w-full h-32 md:h-40 rounded-lg border-2 border-gray-700 group-hover:border-red-500 transition-all duration-300 shadow-lg group-hover:shadow-red-500/50 cursor-pointer overflow-hidden"
+                    class="relative h-32 md:h-40 rounded-lg border-2 border-gray-700 group-hover:border-red-500 transition-all duration-300 shadow-lg group-hover:shadow-red-500/50 cursor-pointer overflow-hidden"
                   >
                     <img 
                       :src="cert.preview" 
