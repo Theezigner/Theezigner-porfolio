@@ -6,22 +6,22 @@ type Socials = {
 };
 const socials: Socials[] = [
   {
-    icon: "/Mail.svg",
+    icon: "/contacts/Mail.svg",
     name: "Email",
     link: "mailto:adebayotemitayo86@gmail.com",
   },
   {
-    icon: "/Github.svg",
+    icon: "/contacts/Github.svg",
     name: "GitHub",
     link: "https://github.com/Theezigner",
   },
   {
-    icon: "/linkedin.svg",
+    icon: "/contacts/linkedin.svg",
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/temitayo-adebayo-95244b239/",
   },
   {
-    icon: "/twitter.svg",
+    icon: "/contacts/twitter.svg",
     name: "X",
     link: "https://x.com/TeeTriple64473",
   },

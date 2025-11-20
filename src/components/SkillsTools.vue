@@ -58,7 +58,7 @@ const skillCategories: SkillCategory[] = [
         name: "Vite",
       },
       {
-        image: "/Tailwind Css.svg",
+        image: "/skills/Tailwind Css.svg",
         name: "Tailwind CSS",
       },
     ],
@@ -97,7 +97,7 @@ const skillCategories: SkillCategory[] = [
         name: "Git",
       },
       {
-        image: "/Github.svg",
+        image: "/contacts/Github.svg",
         name: "GitHub",
       },
       {

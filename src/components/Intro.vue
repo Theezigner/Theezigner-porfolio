@@ -82,7 +82,7 @@ const links: Link[] = [
       class="order-1 md:order-2 p-[0.2px] rounded-lg bg-gradient-to-r from-red-500 to-red-900"
     >
       <img
-        src="/ChatGPT Image Aug 9, 2025, 11_59_22 AM.png"
+        src="/profilePicture.png"
         alt="down arrow"
         class="rounded w-50 h-50 md:w-auto md:h-auto border-[4px] border-solid border-transparent"
       />

@@ -1,8 +1,15 @@
 <script setup lang="ts">
+type Certificate = {
+  url: string;
+  type: "image" | "pdf";
+  preview?: string;
+};
+
 type Educations = {
   name: string;
   years: { start: string; end: string | "Present" };
   description: string;
+  certificates?: Certificate[];
 };
 
 const educations: Educations[] = [
@@ -11,6 +18,17 @@ const educations: Educations[] = [
     years: { start: "2024", end: "25" },
     description:
       "Gained hands-on experience in building modern, responsive, and scalable web applications. Learned and applied HTML, CSS, JavaScript, TypeScript, React, Vite, and Vue, along with best practices in UI/UX, performance optimization, and component-based development. Strengthened problem-solving skills through real-world projects, teamwork, and continuous learning in a fast-paced environment.",
+    certificates: [
+      {
+        url: "/certificates/altschool/AltSchool Africa Certificate - Temitayo.pdf",
+        type: "pdf",
+        preview: "/certificates/altschool/certificate preview.png",
+      },
+      {
+        url: "/certificates/altschool/Volunteer Certificate-03.jpg",
+        type: "image",
+      },
+    ],
   },
   {
     name: "Scrimba",
@@ -35,12 +53,19 @@ const educations: Educations[] = [
     years: { start: "2022", end: "22" },
     description:
       "Completed a professional course in UI/UX Design, gaining a strong foundation in user research, wireframing, prototyping, and usability principles. Learned how to design intuitive and user-centered interfaces while applying industry-standard tools and design thinking methods to real-world projects.",
+    certificates: [
+      {
+        url: "/certificates/coursera/Coursera Certificate.pdf",
+        type: "pdf",
+        preview: "/certificates/coursera/coursera preview.jpeg",
+      },
+    ],
   },
   {
     name: "Canva 4 E",
     years: { start: "2021", end: "21" },
     description:
-      "Completed training in graphic design principles including color theory, typography, layout, and visual storytelling. Learned to create engaging digital assets such as social media graphics, presentations, and branding materials using Canva’s design tools. Built a strong foundation in visual communication and creative problem-solving.",
+      "Completed training in graphic design principles including color theory, typography, layout, and visual storytelling. Learned to create engaging digital assets such as social media graphics, presentations, and branding materials using Canva's design tools. Built a strong foundation in visual communication and creative problem-solving.",
   },
 ];
 </script>
@@ -57,8 +82,8 @@ const educations: Educations[] = [
     >
       <div v-for="(education, index) in educations" :key="index" class="">
         <div class="mb-5 flex flex-wrap items-center gap-3">
-          <div class="flex flex-row items-center gap-5">
-            <div class="hidden md:block bg-gradient-to-r from-red-500 to-red-900 md:w-5 md:h-5 rounded-full"></div>
+          <div class="flex flex-row items-center gap-2 md:gap-5">
+            <div class="block bg-gradient-to-r from-red-500 to-red-900 w-3 h-3 md:w-5 md:h-5 rounded-full"></div>
             <p class="text-lg md:text-4xl font-semibold text-left">
             {{ education.name }}
           </p>
@@ -73,13 +98,56 @@ const educations: Educations[] = [
           class="p-[1px] rounded-lg bg-gradient-to-r from-red-500 to-red-900 w-full h-full ml-0 md:ml-10"
         >
           <div
-            class="flex flex-col rounded-lg w-full h-full bg-[#0D0C21] flex items-start text-white px-4 md:p-5"
+            class="flex flex-col rounded-lg w-full h-full bg-[#0D0C21] flex items-start text-white px-4 py-4 md:p-5"
           >
             <p
               class="md:text-justify text-left text-xs md:text-xl font-normal text-gray-300 my-3"
             >
               {{ education.description }}
             </p>
+            
+            <div 
+              v-if="education.certificates && education.certificates.length > 0" 
+              class="mt-4 mb-3 flex flex-col md:flex-row gap-4"
+            >
+              <a 
+                v-for="(cert, certIndex) in education.certificates" 
+                :key="certIndex"
+                :href="cert.url" 
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex-1 group relative"
+              >
+                <template v-if="cert.type === 'pdf'">
+                  <div 
+                    v-if="cert.preview"
+                    class="relative w-full h-32 md:h-40 rounded-lg border-2 border-gray-700 group-hover:border-red-500 transition-all duration-300 shadow-lg group-hover:shadow-red-500/50 cursor-pointer overflow-hidden"
+                  >
+                    <img 
+                      :src="cert.preview" 
+                      :alt="`${education.name} Certificate Preview`"
+                      class="w-full h-full object-cover"
+                    />
+                   
+                  </div>
+                  <div 
+                    v-else
+                    class="w-full h-32 md:h-40 rounded-lg border-2 border-gray-700 group-hover:border-red-500 transition-all duration-300 shadow-lg group-hover:shadow-red-500/50 cursor-pointer bg-gradient-to-br from-gray-800 to-gray-900 flex flex-col items-center justify-center gap-2"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 md:h-16 md:w-16 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                    <span class="text-xs md:text-sm font-semibold text-gray-300">PDF Certificate</span>
+                  </div>
+                </template>
+                <img 
+                  v-else
+                  :src="cert.url" 
+                  :alt="`${education.name} Certificate ${certIndex + 1}`"
+                  class="w-full h-32 md:h-40 object-cover rounded-lg border-2 border-gray-700 group-hover:border-red-500 transition-all duration-300 shadow-lg group-hover:shadow-red-500/50 cursor-pointer"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
